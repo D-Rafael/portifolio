@@ -96,10 +96,25 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Tarefa 7 (Footer) concluida: copyright + links pro GitHub e LinkedIn, mesma protecao `rel="noopener noreferrer"`.
 - Validacao final de semantica do HTML (ultimo item do Milestone 2): encontrado um pulo de hierarquia de titulos (h2 "Sobre mim" direto pra h4 das categorias de skills, sem h3 no meio). Corrigido adicionando `<h3>Skills</h3>`. Resto da pagina validado: um unico h1, h2 por secao, h3 nos cards, todo `target="_blank"` com `rel="noopener noreferrer"`, imagens com `alt`, labels ligadas aos inputs, sem id duplicado.
 - MILESTONE 2 (Estrutura HTML) CONCLUIDO.
+- Issues #1 e #2 fechadas no GitHub, Milestones 1 e 2 fechados tambem (todos os itens concluidos).
+- Adicionado WhatsApp (`wa.me/5555996753660`) como novo canal de contato no painel da secao Contato.
+- Adicionados icones SVG inline (sem dependencia externa, sem CDN) nos links de GitHub e LinkedIn do Footer. Decisao: SVG inline ao inves de biblioteca tipo Font Awesome, pra evitar dependencia externa e risco de quebra futura. SVGs marcados com `aria-hidden="true"` porque o texto do link (GitHub/LinkedIn) ja descreve o link pra leitor de tela.
 
 ### Ideias novas
 
-- (vazio por enquanto)
+- Adicionados icones (GitHub, LinkedIn, WhatsApp, Email, Telefone, olho/"ver" e das tecnologias: HTML5, CSS3, JavaScript, Python, Java, C, Git, PostgreSQL, MySQL, VS Code) usando SVG inline com padrao `<symbol>` + `<use>` (sem dependencia externa). SVGs baixados da fonte oficial do projeto Simple Icons (licenca CC0, dominio publico). Simbolos definidos uma vez no topo do `<body>`, referenciados via `<use href="#icon-X">` onde precisar. CONCLUIDO EM TODOS OS LUGARES: Footer, Skills (Frontend/Backend/Ferramentas), botoes de CV, card de Projetos (Ver demo + GitHub), painel de Contato inteiro (Email/Telefone/WhatsApp/Redes).
+
+### Erros encontrados (icones)
+
+- Ao adicionar o icone no "Ver demo", ficou uma `<a>` aninhada dentro de outra `<a>` (invalido em HTML) e o texto "Ver demo" duplicado. Corrigido substituindo o bloco inteiro por uma unica `<a>` limpa.
+
+- Adicionados icones tambem no nav do Header (Sobre = icon-user, Projetos = icon-folder, Contato = reaproveita icon-email) e no botao "Ver Projetos" do Hero (icon-folder). Total de 19 simbolos na biblioteca, todos usados em pelo menos um lugar.
+
+### Revisao final (antes do Milestone 3)
+
+- Revisado o HTML inteiro secao por secao: nenhum erro estrutural encontrado (tags fechadas certinho, sem id duplicado, sem heading pulando nivel, todo link externo com `rel="noopener noreferrer"`, todo icone decorativo com `aria-hidden="true"`).
+- 2 inconsistencias visuais anotadas pra resolver no CSS (nao sao bugs): (1) posicao do icone varia entre antes/depois do texto dependendo do botao; (2) icones do Footer sao 20x20, resto do site e 16x16. Decidido deixar pra ajustar durante a estilizacao.
+- DECISAO PENDENTE PRO MILESTONE 3: colorir cada icone de tecnologia com a cor oficial da marca (ex: HTML5 laranja #E34F26, CSS3 azul #1572B6, JavaScript amarelo #F7DF1E), usando uma classe extra por icone (ex: `.icon-html5`) que sobrescreve o `color` (os SVGs usam `fill="currentColor"`, entao herdam a cor do CSS automaticamente). Atencao: amarelo do JS pode ter baixo contraste dependendo do fundo, testar visualmente.
 
 ---
 

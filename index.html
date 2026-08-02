@@ -93,14 +93,61 @@
           d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"
         />
       </symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path
+          d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.866 0-7 2.239-7 5v2h14v-2c0-2.761-3.134-5-7-5z"
+        />
+      </symbol>
+      <symbol id="icon-folder" viewBox="0 0 24 24">
+        <path d="M10 4H2v16h20V6H12l-2-2z" />
+      </symbol>
     </svg>
     <header>
       <a href="#" class="logo">&lt;DR<span class="logo-accent">/&gt;</span></a>
       <nav>
         <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a href="#sobre">
+              <svg
+                class="icon"
+                width="16"
+                height="16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <use href="#icon-user"></use>
+              </svg>
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="#projetos">
+              <svg
+                class="icon"
+                width="16"
+                height="16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <use href="#icon-folder"></use>
+              </svg>
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a href="#contato">
+              <svg
+                class="icon"
+                width="16"
+                height="16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <use href="#icon-email"></use>
+              </svg>
+              Contato
+            </a>
+          </li>
         </ul>
       </nav>
       <a href="assets/files/curriculum.pdf" class="btn-cv" download
@@ -133,7 +180,18 @@
         >
           <use href="#icon-download"></use></svg
       ></a>
-      <a href="#projetos" class="btn-secondary">Ver Projetos</a>
+      <a href="#projetos" class="btn-secondary">
+        <svg
+          class="icon"
+          width="16"
+          height="16"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <use href="#icon-folder"></use>
+        </svg>
+        Ver Projetos
+      </a>
       <div class="stats-card">
         <div class="stat">
           <strong>2,5</strong>
