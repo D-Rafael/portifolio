@@ -122,15 +122,17 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 
 ### Passo a passo / comandos
 
-- (ainda nao iniciado)
+- Tarefa 1: criado `css/style.css` e linkado no `<head>` do `index.html` via `<link rel="stylesheet">`
+- Tarefa 2: definida paleta de cores em `:root` (variaveis CSS) - fundo escuro azulado, texto quase-branco, roxo/lilas de destaque. Escolhida com base em psicologia das cores (roxo = criatividade/inovacao/sofisticacao, comum em marcas de tech) ja que o usuario nao tinha os hex exatos do modelo original.
+- Tarefa 3: reset basico (box-sizing border-box, remove margem do body, remove estilo padrao de link/lista/imagem) + aplicado fundo/cor/fonte no body
+- Tarefa 4: Header estilizado (flex com logo/nav/botao distribuidos, sticky no topo, `.icon` com vertical-align pra alinhar todos os icones do site de uma vez, `.logo`/`.logo-accent` adaptados pra usar a paleta nova, botao Curriculo preenchido com cor primaria)
+- Validado visualmente no navegador (print do Live Server): Header ficou conforme esperado
 
 ### Erros encontrados
 
-- (vazio por enquanto)
+- Apos "Tarefa 4", o commit `733cc2f` (mensagem "estilo de Header") na verdade so continha a paleta e o reset - o CSS do Header nao tinha sido colado ainda antes do commit. Percebido ao comparar o arquivo local com o conteudo do commit. Corrigido colando o CSS do Header de novo (ainda nao commitado).
 
 ### Acertos e decisoes
-
-- (vazio por enquanto)
 
 ### Ideias novas
 

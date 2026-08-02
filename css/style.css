@@ -45,3 +45,59 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.icon {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 10;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.logo-accent {
+  color: var(--color-primary);
+}
+nav ul {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+}
+.btn-cv {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-cv:hover {
+  background-color: var(--color-primary-hover);
+}
