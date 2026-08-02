@@ -140,6 +140,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Tarefa 7 (estilizacao da secao Projetos) concluida e validada: grid de 3 colunas, card real com cover/categoria/tags/botoes, cards vazios com borda tracejada diferenciando visualmente de placeholder.
 - Tarefa 8 (estilizacao de Contato e Footer) concluida e validada: formulario e painel de contato lado a lado em grid, inputs com foco roxo (`outline: none` + `border-color`), footer com copyright e links alinhados nas pontas.
 - Tarefa 9 (responsividade) concluida e validada: media query `@media (max-width: 768px)` transforma os grids/flex lado a lado (header, skills, projetos, contato) em coluna unica empilhada. Testado no modo mobile do DevTools, resultado organizado (header quebra em 2 linhas, titulo se ajusta, cards ficam full-width).
+- Revisao completa do codigo (HTML + CSS) linha por linha antes de fechar o milestone: nenhum bug encontrado, todas as classes CSS usadas tem correspondencia no HTML e vice-versa, contraste de cores adequado.
+- Corrigidas as 2 inconsistencias visuais que tinham ficado pendentes: (1) icone agora sempre antes do texto nos botoes de CV (header e Hero), igual o padrao do resto do site; (2) icones do Footer padronizados pra 16x16 (antes eram 20x20).
 - MILESTONE 3 (Estilizacao CSS) CONCLUIDO.
 
 ### Ideias novas
