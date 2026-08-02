@@ -61,6 +61,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Atributo `alt` da imagem de perfil escrito com erro de digitacao ("Pergil" ao inves de "Perfil"). Corrigido.
 - Botao "Curriculo" colocado inicialmente dentro do `<ul>` sem estar num `<li>` (invalido semanticamente: `<ul>` so pode ter `<li>` como filho direto). Corrigido: botao movido pra fora do `<nav>`, direto dentro do `<header>`.
 - Pasta `docs/` (com este proprio diario) sumiu do disco em algum momento, antes de ser commitada. Como nunca foi versionada pelo Git, nao tinha como recuperar pelo historico. Arquivo recriado do zero com o conteudo que tinha em contexto. Licao: comitar o diario cedo, pra ele passar a ter historico no Git tambem.
+- Ao tentar separar em dois commits (header+foto / docs), os dois `git add` acabaram juntados num commit so (`3018908`), com a mensagem do segundo commit ("docs: ...") mas o conteudo do primeiro (index.html + foto). Como o commit ja tinha sido enviado ao GitHub, optamos por nao reescrever (evitar amend + force push) e so seguir corrigindo dali.
+- Typo classico: `dit add docs/` ao inves de `git add docs/` (bash: dit: command not found). O `git add` nao rodou, entao o commit seguinte nao teve nada pra commitar e o push nao teve nada pra enviar. Corrigido digitando `git add` certinho. Licao: sempre conferir a saida de cada comando antes de rodar o proximo (o `git status` ja mostraria "nothing added").
 
 ### Acertos e decisoes
 
@@ -70,6 +72,22 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Footer nao veio no PDF do modelo: decidido deixar para depois (nao bloqueia o resto do Milestone 2 por enquanto).
 - Foto de perfil vai aparecer em dois lugares: avatar pequeno no Header (concluido) e foto maior na secao Hero (Tarefa 3, ainda pendente).
 - Tarefa 2 (Header/Navbar) concluida e validada.
+- DECISAO REVISADA: logo do header trocado de texto (nome completo) para um logo estilizado `<DR/>` (estilo "tag de codigo"). Foto de perfil removida do header, vai ficar ao lado do texto da secao Sobre em vez de aparecer no Hero.
+- CSS do logo `<DR/>` (guardado pra aplicar no Milestone 3):
+  ```css
+  .logo {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .logo-accent {
+    color: #00b894;
+  }
+  ```
+- Header finalizado com o novo logo `<DR/>`: `<img>` da foto removido, link com nome completo removido (ficou duplicado com o `<DR/>` numa primeira tentativa, corrigido). Header final: logo `<DR/>` + nav (Sobre/Projetos/Contato) + botao Curriculo.
+- Curriculo em PDF salvo em `assets/files/curriculum.pdf`, linkado nos botoes de CV do header e do Hero com atributo `download` (forca o navegador a baixar o arquivo ao inves de so abrir).
+- Tarefa 3 (secao Hero/Home) concluida: saudacao, titulo (`Diogo Rafael - Assistente de TI & Desenvolvedor Front-end.`, usando hifen simples, nunca travessao), badge "Disponivel para oportunidades", paragrafo de bio (adaptado com base no perfil real: Assistente de TI II + 1,5 ano de graduacao em engenharia de software + 1 ano de estudo autodidata), botoes "Baixar CV" e "Ver Projetos", e card de estatisticas com 3 dados reais (2,5 anos estudando, cargo TI II, foco em Dev generalista).
 
 ### Ideias novas
 
