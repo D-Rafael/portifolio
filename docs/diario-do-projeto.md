@@ -88,6 +88,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Header finalizado com o novo logo `<DR/>`: `<img>` da foto removido, link com nome completo removido (ficou duplicado com o `<DR/>` numa primeira tentativa, corrigido). Header final: logo `<DR/>` + nav (Sobre/Projetos/Contato) + botao Curriculo.
 - Curriculo em PDF salvo em `assets/files/curriculum.pdf`, linkado nos botoes de CV do header e do Hero com atributo `download` (forca o navegador a baixar o arquivo ao inves de so abrir).
 - Tarefa 3 (secao Hero/Home) concluida: saudacao, titulo (`Diogo Rafael - Assistente de TI & Desenvolvedor Front-end.`, usando hifen simples, nunca travessao), badge "Disponivel para oportunidades", paragrafo de bio (adaptado com base no perfil real: Assistente de TI II + 1,5 ano de graduacao em engenharia de software + 1 ano de estudo autodidata), botoes "Baixar CV" e "Ver Projetos", e card de estatisticas com 3 dados reais (2,5 anos estudando, cargo TI II, foco em Dev generalista).
+- Currículo em PDF (`assets/files/curriculum.pdf`) lido pra extrair dados reais: bio ("Quem sou"), conhecimentos tecnicos e habilidades (soft skills). Usado como fonte de verdade pro conteudo do site, ao inves de inventar informacao.
+- Tarefa 4 (secao Sobre) concluida: `<h2>Sobre mim</h2>`, foto de perfil ao lado do texto de bio (puxado do curriculo), `<h3>Skills</h3>` e grade com 4 categorias reais (Frontend: HTML/CSS/JavaScript; Backend: C, Python basico, Java basico; Ferramentas: Git, GitHub, VS Code, PostgreSQL, MySQL; Soft Skills: as 5 habilidades do curriculo).
 
 ### Ideias novas
 
