@@ -93,6 +93,9 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Tarefa 5 (secao Projetos) concluida: decidido nao inventar projetos ficticios. Grade com 3 cards: 1 card real (este proprio Portfolio, com tags HTML/CSS/JavaScript, link pro GitHub com `rel="noopener noreferrer"` por seguranca, e "Ver demo" com `href="#"` ate o deploy no Milestone 5) + 2 cards vazios escrito "Ainda sem projeto", pra reservar espaco pros proximos projetos.
 - Observado: palavra "Portifolio" (com "i" extra) usada no titulo da pagina e nos textos, grafia correta seria "Portfolio". Usuario avisado, decidiu manter por enquanto (nome do repositorio no GitHub tambem esta assim).
 - Tarefa 6 (secao Contato) concluida: formulario com labels ligadas aos inputs (`for`/`id`), campos Nome/Email/Mensagem com `required`, botao Enviar (ainda sem funcionar de verdade, isso e JS no Milestone 4). Painel de contato com dados reais: email (`mailto:`), telefone (`tel:`, incluido por decisao do usuario), prazo de resposta "ate 2 dias uteis", e links pro GitHub e LinkedIn.
+- Tarefa 7 (Footer) concluida: copyright + links pro GitHub e LinkedIn, mesma protecao `rel="noopener noreferrer"`.
+- Validacao final de semantica do HTML (ultimo item do Milestone 2): encontrado um pulo de hierarquia de titulos (h2 "Sobre mim" direto pra h4 das categorias de skills, sem h3 no meio). Corrigido adicionando `<h3>Skills</h3>`. Resto da pagina validado: um unico h1, h2 por secao, h3 nos cards, todo `target="_blank"` com `rel="noopener noreferrer"`, imagens com `alt`, labels ligadas aos inputs, sem id duplicado.
+- MILESTONE 2 (Estrutura HTML) CONCLUIDO.
 
 ### Ideias novas
 
