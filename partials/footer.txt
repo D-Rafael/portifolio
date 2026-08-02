@@ -1,0 +1,37 @@
+<footer>
+  <p>&copy; 2026 Diogo Rafael. Todos os direitos reservados.</p>
+  <div class="footer-links">
+    <a
+      href="https://github.com/D-Rafael"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        class="icon"
+        width="16"
+        height="16"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <use href="#icon-github"></use>
+      </svg>
+      GitHub
+    </a>
+    <a
+      href="https://linkedin.com/in/diogorafaelarbterdasilva"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg
+        class="icon"
+        width="16"
+        height="16"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <use href="#icon-linkedin"></use>
+      </svg>
+      LinkedIn
+    </a>
+  </div>
+</footer>

@@ -166,6 +166,18 @@ Apos revisar o site pronto, o usuario deu feedback importante que gerou mudancas
 - Adicionado padrao "sticky footer" (`body` vira flex column com `min-height:100vh`, `body > section { flex: 1 }`) pra o footer sempre grudar no final da tela mesmo com pouco conteudo, evitando vao vazio embaixo dele quando ele for carregado via JS.
 - Usuario continuou preocupado com espaco vazio mesmo apos essas correcoes (Home tem pouco conteudo, sobra espaco vertical mesmo com header/footer). Solucao: `#home` mudou de `align-items: flex-start` para `align-items: center`, centralizando o conteudo verticalmente dentro do espaco disponivel (respiro em cima e embaixo, ao inves de vazio so embaixo) - padrao comum em secoes hero. Ajustado tambem o media query mobile pra manter `align-items: flex-start` quando empilhado (senao o texto ficaria centralizado horizontalmente, o que nao e desejado).
 
+## Milestone 4 - Interatividade JS
+
+### Passo a passo / comandos
+
+- Tarefa 1: criado `js/script.js` (ja estava linkado com `<script src="js/script.js" defer>` em todas as 4 paginas desde a reestruturacao multi-pagina).
+- Tarefa 2: implementada a funcao `carregandoPartes(url, placeholderId)` - usa `fetch` (com `async/await`) pra buscar o HTML de um partial e `.innerHTML` pra injetar no placeholder certo. Chamada duas vezes: uma pro header, uma pro footer.
+
+### Erros encontrados
+
+- Typo inicial: funcao definida como `carregandoPartes` mas chamada como `loadPartial` (nome antigo, antes do usuario traduzir pra portugues). Corrigido deixando os nomes iguais.
+- **Bug sutil e importante**: o Live Server (extensao do VS Code) injeta automaticamente um script de auto-reload em todo arquivo `.html` que ele serve - inclusive nos `partials/header.html` e `partials/footer.html`, que sao so fragmentos, nao paginas completas. Esse script injetado quebrava o HTML (aparecia no meio do SVG), fazendo o menu e o "LinkedIn" do footer sumirem visualmente. Diagnosticado inspecionando o DOM real pelo DevTools (Elements), que mostrou o `<script>` do live-server no meio do `<svg>`. Tentativa 1 (regex pra remover o script injetado) nao resolveu. Solucao definitiva: renomeados os arquivos pra `partials/header.txt` e `partials/footer.txt` - o Live Server so injeta em arquivos `.html`/`.htm`, entao `.txt` passa direto sem ser mexido. `fetch` funciona igual independente da extensao. Efeito colateral: perde o realce de sintaxe HTML no VS Code pra esses 2 arquivos (so estetico no editor).
+
 ### Ideias novas
 
 - (vazio por enquanto)
