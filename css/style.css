@@ -229,3 +229,34 @@ h3 {
   padding: 4px 0;
   color: var(--color-text-muted);
 }
+
+.icon-html5 {
+  color: #e34f26;
+}
+.icon-css {
+  color: #1572b6;
+}
+.icon-javascript {
+  color: #f7df1e;
+}
+.icon-python {
+  color: #3776ab;
+}
+.icon-java {
+  color: #007396;
+}
+.icon-c {
+  color: #a8b9cc;
+}
+.icon-git {
+  color: #f05032;
+}
+.icon-vscode {
+  color: #007acc;
+}
+.icon-postgresql {
+  color: #336791;
+}
+.icon-mysql {
+  color: #4479a1;
+}

@@ -135,7 +135,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 ### Acertos e decisoes
 
 - Tarefa 5 (estilizacao do Hero) concluida e validada com print do navegador: titulo grande, badge em formato pilula, botao primario preenchido vs secundario contornado (hierarquia visual clara), card de estatisticas com fundo elevado/borda/numeros em roxo. Resultado bate proximo do modelo original em PDF.
-- Tarefa 6 (estilizacao da secao Sobre) concluida e validada: foto circular com borda roxa ao lado do texto, grade de skills em 4 colunas com cards de fundo elevado. Ainda pendente (ideia registrada antes): colorir cada icone de tecnologia com a cor oficial da marca - por enquanto todos os icones de skills estao na cor cinza-arroxeada padrao (herdada do `color` do texto via `currentColor`).
+- Tarefa 6 (estilizacao da secao Sobre) concluida e validada: foto circular com borda roxa ao lado do texto, grade de skills em 4 colunas com cards de fundo elevado.
+- Icones de tecnologia coloridos com a cor oficial de cada marca (HTML5 laranja, CSS3 azul, JS amarelo, Python azul, Java azul-petroleo, C cinza-azulado, Git laranja-avermelhado, VS Code azul, PostgreSQL azul, MySQL azul). GitHub ficou de fora de proposito (cor oficial e quase preto, ficaria invisivel no fundo escuro do site) - mantido na cor padrao do texto. Implementado com uma classe extra por icone (ex: `icon-html5`) somada a classe `icon` generica ja existente.
 
 ### Ideias novas
 
