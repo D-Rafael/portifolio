@@ -144,6 +144,28 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Corrigidas as 2 inconsistencias visuais que tinham ficado pendentes: (1) icone agora sempre antes do texto nos botoes de CV (header e Hero), igual o padrao do resto do site; (2) icones do Footer padronizados pra 16x16 (antes eram 20x20).
 - MILESTONE 3 (Estilizacao CSS) CONCLUIDO.
 
+### Feedback do usuario apos ver o site completo (mudanca de arquitetura)
+
+Apos revisar o site pronto, o usuario deu feedback importante que gerou mudancas estruturais:
+
+1. **Paginas separadas em vez de single-page com scroll**: usuario quer clicar em "Sobre" e navegar pra uma pagina de verdade, nao descer a mesma pagina. Decisao tecnica: como o site e HTML/CSS puro (sem framework/templates), header e footer precisam ficar em arquivos parciais (`partials/header.html`, `partials/footer.html`) carregados via JavaScript (`fetch`) em cada pagina, evitando duplicar o codigo do menu em 4 lugares. O usuario decidiu que EU faco toda a estrutura (arquivos HTML separados, partials, placeholders), mas o JS que efetivamente busca e injeta o header/footer fica registrado no Milestone 4 pra ELE fazer (aprendizado).
+2. **Espaco vazio demais no Hero e entre secoes**: identificada causa tecnica - `padding` em `<section>` nao se funde entre elementos vizinhos como `margin` faz, entao o padding-bottom de uma secao soma com o padding-top da proxima, dobrando o espaco percebido nas bordas.
+3. **Texto do "Sobre mim" parecia desalinhado da foto**: `align-items: flex-start` fazia o texto (mais alto que a foto) ficar com bastante vazio embaixo, sem parecer alinhado com o circulo da foto.
+4. Projetos e Contato: aprovados sem mudanca.
+5. Um ponto ("nao ta preenchido") ficou sem identificar exatamente o que era - perguntar de novo se reaparecer.
+
+### Mudancas feitas em resposta
+
+- Reduzido `section { padding }` de 64px para 48px (menos espaco duplicado nas bordas das secoes).
+- Hero (`#home`) virou layout flex de 2 colunas: `.hero-content` (textos e botoes) ao lado do `.stats-card`, em vez de tudo empilhado numa coluna so com o card sobrando espaco embaixo.
+- `.sobre-intro` mudou de `align-items: flex-start` para `align-items: center`, alinhando a foto verticalmente ao centro do texto.
+- **Reestruturacao para multi-pagina**: criados `partials/header.html` (com a biblioteca de icones SVG + `<header>`) e `partials/footer.html`. Criadas as paginas `index.html` (so a Hero), `sobre.html`, `projetos.html`, `contato.html`, cada uma com `<div id="header-placeholder">` e `<div id="footer-placeholder">` esperando serem preenchidos via JS (Milestone 4).
+- Links de navegacao no header agora apontam pra arquivos reais (`sobre.html`, `projetos.html`, `contato.html`, `index.html` no logo) em vez de ancoras (`#sobre`, etc). Botao "Ver Projetos" do Hero tambem virou `projetos.html`.
+- Issue #4 (Milestone 4) atualizada no GitHub: adicionada a tarefa de carregar header/footer via fetch, e removida a tarefa de "scroll suave entre secoes" (nao faz mais sentido do jeito que fazia numa pagina so - agora a navegacao e entre paginas de verdade).
+- ATENCAO: ate o usuario fazer a tarefa de JS do fetch no Milestone 4, as paginas vao aparecer SEM header e footer (os placeholders ficam vazios). Isso e esperado, nao e bug.
+- Adicionado padrao "sticky footer" (`body` vira flex column com `min-height:100vh`, `body > section { flex: 1 }`) pra o footer sempre grudar no final da tela mesmo com pouco conteudo, evitando vao vazio embaixo dele quando ele for carregado via JS.
+- Usuario continuou preocupado com espaco vazio mesmo apos essas correcoes (Home tem pouco conteudo, sobra espaco vertical mesmo com header/footer). Solucao: `#home` mudou de `align-items: flex-start` para `align-items: center`, centralizando o conteudo verticalmente dentro do espaco disponivel (respiro em cima e embaixo, ao inves de vazio so embaixo) - padrao comum em secoes hero. Ajustado tambem o media query mobile pra manter `align-items: flex-start` quando empilhado (senao o texto ficaria centralizado horizontalmente, o que nao e desejado).
+
 ### Ideias novas
 
 - (vazio por enquanto)

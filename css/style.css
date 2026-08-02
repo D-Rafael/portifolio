@@ -26,10 +26,17 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
   line-height: 1.6;
+}
+
+body > section {
+  flex: 1;
 }
 
 img {
@@ -103,7 +110,18 @@ nav a:hover {
 }
 
 section {
-  padding: 64px 32px;
+  padding: 48px 32px;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.hero-content {
+  flex: 1 1 480px;
 }
 
 .hero-greeting {
@@ -168,7 +186,7 @@ h1 {
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 24px;
-  margin-top: 32px;
+  flex: 1 1 300px;
   max-width: 320px;
 }
 
@@ -195,9 +213,9 @@ h3 {
 
 .sobre-intro {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .sobre-intro img {
@@ -475,8 +493,14 @@ footer {
     padding: 40px 20px;
   }
 
+  #home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .sobre-intro {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .skills-grid {
