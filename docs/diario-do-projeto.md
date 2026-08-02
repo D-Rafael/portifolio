@@ -139,7 +139,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Icones de tecnologia coloridos com a cor oficial de cada marca (HTML5 laranja, CSS3 azul, JS amarelo, Python azul, Java azul-petroleo, C cinza-azulado, Git laranja-avermelhado, VS Code azul, PostgreSQL azul, MySQL azul). GitHub ficou de fora de proposito (cor oficial e quase preto, ficaria invisivel no fundo escuro do site) - mantido na cor padrao do texto. Implementado com uma classe extra por icone (ex: `icon-html5`) somada a classe `icon` generica ja existente.
 - Tarefa 7 (estilizacao da secao Projetos) concluida e validada: grid de 3 colunas, card real com cover/categoria/tags/botoes, cards vazios com borda tracejada diferenciando visualmente de placeholder.
 - Tarefa 8 (estilizacao de Contato e Footer) concluida e validada: formulario e painel de contato lado a lado em grid, inputs com foco roxo (`outline: none` + `border-color`), footer com copyright e links alinhados nas pontas.
-- Com isso, todas as secoes de conteudo do Milestone 3 estao estilizadas. So falta a responsividade (ultimo item do checklist).
+- Tarefa 9 (responsividade) concluida e validada: media query `@media (max-width: 768px)` transforma os grids/flex lado a lado (header, skills, projetos, contato) em coluna unica empilhada. Testado no modo mobile do DevTools, resultado organizado (header quebra em 2 linhas, titulo se ajusta, cards ficam full-width).
+- MILESTONE 3 (Estilizacao CSS) CONCLUIDO.
 
 ### Ideias novas
 

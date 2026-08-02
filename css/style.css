@@ -455,3 +455,45 @@ footer {
 .footer-links a:hover {
   color: var(--color-primary);
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  nav ul {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .sobre-intro {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #projetos {
+    grid-template-columns: 1fr;
+  }
+
+  #contato {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
