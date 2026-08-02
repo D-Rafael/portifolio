@@ -92,6 +92,7 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Tarefa 4 (secao Sobre) concluida: `<h2>Sobre mim</h2>`, foto de perfil ao lado do texto de bio (puxado do curriculo), `<h3>Skills</h3>` e grade com 4 categorias reais (Frontend: HTML/CSS/JavaScript; Backend: C, Python basico, Java basico; Ferramentas: Git, GitHub, VS Code, PostgreSQL, MySQL; Soft Skills: as 5 habilidades do curriculo).
 - Tarefa 5 (secao Projetos) concluida: decidido nao inventar projetos ficticios. Grade com 3 cards: 1 card real (este proprio Portfolio, com tags HTML/CSS/JavaScript, link pro GitHub com `rel="noopener noreferrer"` por seguranca, e "Ver demo" com `href="#"` ate o deploy no Milestone 5) + 2 cards vazios escrito "Ainda sem projeto", pra reservar espaco pros proximos projetos.
 - Observado: palavra "Portifolio" (com "i" extra) usada no titulo da pagina e nos textos, grafia correta seria "Portfolio". Usuario avisado, decidiu manter por enquanto (nome do repositorio no GitHub tambem esta assim).
+- Tarefa 6 (secao Contato) concluida: formulario com labels ligadas aos inputs (`for`/`id`), campos Nome/Email/Mensagem com `required`, botao Enviar (ainda sem funcionar de verdade, isso e JS no Milestone 4). Painel de contato com dados reais: email (`mailto:`), telefone (`tel:`, incluido por decisao do usuario), prazo de resposta "ate 2 dias uteis", e links pro GitHub e LinkedIn.
 
 ### Ideias novas
 
