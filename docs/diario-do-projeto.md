@@ -134,6 +134,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 
 ### Acertos e decisoes
 
+- Tarefa 5 (estilizacao do Hero) concluida e validada com print do navegador: titulo grande, badge em formato pilula, botao primario preenchido vs secundario contornado (hierarquia visual clara), card de estatisticas com fundo elevado/borda/numeros em roxo. Resultado bate proximo do modelo original em PDF.
+
 ### Ideias novas
 
 - (vazio por enquanto)
