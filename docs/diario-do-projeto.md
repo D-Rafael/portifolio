@@ -135,6 +135,7 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 ### Acertos e decisoes
 
 - Tarefa 5 (estilizacao do Hero) concluida e validada com print do navegador: titulo grande, badge em formato pilula, botao primario preenchido vs secundario contornado (hierarquia visual clara), card de estatisticas com fundo elevado/borda/numeros em roxo. Resultado bate proximo do modelo original em PDF.
+- Tarefa 6 (estilizacao da secao Sobre) concluida e validada: foto circular com borda roxa ao lado do texto, grade de skills em 4 colunas com cards de fundo elevado. Ainda pendente (ideia registrada antes): colorir cada icone de tecnologia com a cor oficial da marca - por enquanto todos os icones de skills estao na cor cinza-arroxeada padrao (herdada do `color` do texto via `currentColor`).
 
 ### Ideias novas
 
