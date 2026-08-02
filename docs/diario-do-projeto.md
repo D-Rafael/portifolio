@@ -90,6 +90,8 @@ Registro de acompanhamento do desenvolvimento do portfolio (HTML, CSS e JS puro)
 - Tarefa 3 (secao Hero/Home) concluida: saudacao, titulo (`Diogo Rafael - Assistente de TI & Desenvolvedor Front-end.`, usando hifen simples, nunca travessao), badge "Disponivel para oportunidades", paragrafo de bio (adaptado com base no perfil real: Assistente de TI II + 1,5 ano de graduacao em engenharia de software + 1 ano de estudo autodidata), botoes "Baixar CV" e "Ver Projetos", e card de estatisticas com 3 dados reais (2,5 anos estudando, cargo TI II, foco em Dev generalista).
 - Currículo em PDF (`assets/files/curriculum.pdf`) lido pra extrair dados reais: bio ("Quem sou"), conhecimentos tecnicos e habilidades (soft skills). Usado como fonte de verdade pro conteudo do site, ao inves de inventar informacao.
 - Tarefa 4 (secao Sobre) concluida: `<h2>Sobre mim</h2>`, foto de perfil ao lado do texto de bio (puxado do curriculo), `<h3>Skills</h3>` e grade com 4 categorias reais (Frontend: HTML/CSS/JavaScript; Backend: C, Python basico, Java basico; Ferramentas: Git, GitHub, VS Code, PostgreSQL, MySQL; Soft Skills: as 5 habilidades do curriculo).
+- Tarefa 5 (secao Projetos) concluida: decidido nao inventar projetos ficticios. Grade com 3 cards: 1 card real (este proprio Portfolio, com tags HTML/CSS/JavaScript, link pro GitHub com `rel="noopener noreferrer"` por seguranca, e "Ver demo" com `href="#"` ate o deploy no Milestone 5) + 2 cards vazios escrito "Ainda sem projeto", pra reservar espaco pros proximos projetos.
+- Observado: palavra "Portifolio" (com "i" extra) usada no titulo da pagina e nos textos, grafia correta seria "Portfolio". Usuario avisado, decidiu manter por enquanto (nome do repositorio no GitHub tambem esta assim).
 
 ### Ideias novas
 
